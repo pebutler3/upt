@@ -1,7 +1,1 @@
-header:
-  - url: /api
-    title: API Documentation
-    identifier: api
-  - url: /
-    title: fuck
-    identifier: fuck
+--- {}
