@@ -8,3 +8,6 @@ fields:
   label: Document Upload
   description: Upload Association Documents
   hidden: false
+- type: text
+  name: test
+  label: Test
