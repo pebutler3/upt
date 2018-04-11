@@ -21,3 +21,7 @@ fields:
   description: asfd
   config:
     date_format: MM/DD/YYYY
+- type: image_gallery
+  name: safd
+  label: safd
+  description: sfa
