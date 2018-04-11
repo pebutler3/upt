@@ -1,4 +1,6 @@
 ---
+pages:
+- docs.md
 hide_body: false
 fields:
 - type: file
