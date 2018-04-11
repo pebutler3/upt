@@ -8,20 +8,3 @@ fields:
   label: Document Upload
   description: Upload Association Documents
   hidden: false
-- type: text
-  name: test
-  label: Test
-  description: test
-  config:
-    required: false
-  hidden: false
-- type: datetime
-  name: asdf
-  label: asdf
-  description: asfd
-  config:
-    date_format: MM/DD/YYYY
-- type: image_gallery
-  name: safd
-  label: safd
-  description: sfa
