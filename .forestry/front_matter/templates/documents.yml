@@ -1,0 +1,8 @@
+---
+hide_body: false
+fields:
+- type: file
+  name: document_uploaded
+  label: Document Upload
+  description: Upload Association Documents
+  hidden: false
