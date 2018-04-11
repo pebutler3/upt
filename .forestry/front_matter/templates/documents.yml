@@ -15,3 +15,9 @@ fields:
   config:
     required: false
   hidden: false
+- type: datetime
+  name: asdf
+  label: asdf
+  description: asfd
+  config:
+    date_format: MM/DD/YYYY
