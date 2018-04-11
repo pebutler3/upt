@@ -7,3 +7,9 @@ fields:
   label: Group
   name: group
   description: Group
+  fields:
+  - type: image_gallery
+    name: docs
+    label: Docs
+    description: Association Docs
+    hidden: false
