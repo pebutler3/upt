@@ -2,4 +2,8 @@
 pages:
 - docs.md
 hide_body: false
-fields: []
+fields:
+- type: field_group_list
+  label: Group
+  name: group
+  description: Group
