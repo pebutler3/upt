@@ -15,6 +15,7 @@ fields:
     description: Association Docs
     hidden: false
     default:
+    - "/uploads/2018/04/11/humansvscomputers.pdf"
     - "/uploads/2018/04/11/rules_regs.pdf"
 - type: file
   label: Upload Document
