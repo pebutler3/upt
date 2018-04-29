@@ -14,6 +14,12 @@ menu:
 ---
 {% include cinc.html %}
 
+{% for items in page.docs %}
+  {% for item in items %}
+    {{ item }}: {{ items[item] }}
+  {% endfor %}
+{% endfor %}
+
 
 <header>
  <div class="contain-to-grid">
