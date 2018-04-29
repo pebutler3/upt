@@ -9,7 +9,7 @@ group:
 {% include cinc.html %}
 
 <!-- test -->
-{% for items in page.docs %}
+{% for items in page.group.docs %}
   {% for item in items %}
     {{ item }}: {{ items[item] }}
   {% endfor %}
