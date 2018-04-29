@@ -18,9 +18,12 @@ fields:
 - type: file
   label: Upload Document
   name: uploaded_document
-- type: field_group_list
-  name: x
-  label: x
-  description: z
-  fields:
-  - type: file
+- type: list
+  name: asdfasdf
+  label: asdf
+  default:
+  - asdf
+  - ''
+  - Two
+  - One
+  description: safd
