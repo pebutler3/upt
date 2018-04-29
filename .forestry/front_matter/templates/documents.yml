@@ -1,5 +1,6 @@
 ---
 hide_body: false
+is_partial: false
 fields:
 - type: field_group_list
   label: Group
@@ -11,3 +12,6 @@ fields:
     label: Docs
     description: Association Docs
     hidden: false
+- type: file
+  label: Upload Document
+  name: uploaded_document
