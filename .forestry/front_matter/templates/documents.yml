@@ -18,12 +18,3 @@ fields:
 - type: file
   label: Upload Document
   name: uploaded_document
-- type: list
-  name: asdfasdf
-  label: asdf
-  default:
-  - asdf
-  - ''
-  - Two
-  - One
-  description: safd
