@@ -1,0 +1,9 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: image_gallery
+  name: test
+  label: test
+  default:
+  - "/uploads/2018/04/11/humansvscomputers.pdf"
