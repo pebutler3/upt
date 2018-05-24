@@ -1,5 +1,5 @@
 ---
-title: University Park Tower
+title: UPT
 timezone: UTC
 collections:
   posts:
@@ -8,16 +8,16 @@ collections:
   uploads:
     title: Uploads
     output: true
-exclude:
-- node_modules
-- gulpfile.js
-- package.json
-email: your-email@domain.com
-description: 'Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
-
-'
-markdown: kramdown
-plugins:
-- jekyll-menus
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
