@@ -1,0 +1,110 @@
+<template>
+  <footer>
+    <div class="footer__inner container">
+      <!-- <ul v-for="edge in $static.allFooter.edges" :key="edge.node.id">
+        <li v-for="value in edge.node.propertyManager" :key="value.value">
+          {{ value.value }}
+        </li>
+      </ul>
+      <ul v-for="edge in $static.allFooter.edges" :key="edge.node.id">
+        <li v-for="value in edge.node.management" :key="value.value">
+          {{ value.value }}
+        </li>
+      </ul>
+      <ul v-for="edge in $static.allFooter.edges" :key="edge.node.id">
+        <li v-for="value in edge.node.address" :key="value.value">
+          {{ value.value }}
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <strong>Helpful Links:</strong>
+        </li>
+        <li>
+          <a href="https://www.capmanagement.com/ach">ACH Setup</a>
+        </li>
+        <li>
+          <a href="https://www.capmanagement.com/blog">CAP Blog</a>
+        </li>
+      </ul> -->
+    </div>
+    <!-- <div class="medium-3 columns">
+      <ul class="no-bullet">
+        <li>
+          <strong>Management:</strong>
+        </li>
+        <li>CAP MANAGEMENT</li>
+        <li>910 16th St. Suite 1010</li>
+        <li>Denver, CO 80202</li>
+        <li>
+          <a href="https://www.capmanagement.com">www.capmanagement.com</a>
+        </li>
+      </ul>
+    </div>
+    <div class="medium-3 columns">
+      <ul class="no-bullet">
+        <li>
+          <strong>Property Manager:</strong>
+        </li>
+        <li>Aaron Monaco</li>
+        <li>
+          (303) 832-2971 ext:
+          <strong>301</strong>
+        </li>
+        <li>
+          <a href="mailto:aaron@capmanagement.com">aaron@capmanagement.com</a>
+        </li>
+      </ul>
+    </div>
+    <div class="medium-3 columns">
+      <ul class="no-bullet">
+        <li>
+          <strong>Address:</strong>
+        </li>
+        <li>2225 Buchtel Blvd</li>
+        <li>Denver, CO 80210</li>
+      </ul>
+    </div>
+    <div class="medium-3 columns">
+      <ul class="no-bullet">
+        <li>
+          <strong>Helpful Links:</strong>
+        </li>
+        <li>
+          <a href="https://www.capmanagement.com/ach">ACH Setup</a>
+        </li>
+        <li>
+          <a href="https://www.capmanagement.com/blog">CAP Blog</a>
+        </li>
+      </ul>
+    </div> -->
+  </footer>
+</template>
+
+<script>
+import axios from 'axios';
+export default {
+  name: 'Footer',
+}
+</script>
+
+<style lang="scss" scoped>
+  footer {
+    background: url(../img/footer-bg.jpg) center center no-repeat;
+    background-size: cover;
+    border-top: 5px solid #000;
+    color: #fff;
+    margin-top: 1em;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 33.333333%;
+    }
+  }
+
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>

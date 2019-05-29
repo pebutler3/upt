@@ -1,25 +1,18 @@
 {
-  "name": "coacep",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "name": "my-gridsome-site",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pebutler3/coacep.git"
+  "dependencies": {
+    "axios": "^0.18.0",
+    "gridsome": "^0.6.0"
   },
-  "author": "P.E. Butler III",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pebutler3/coacep/issues"
-  },
-  "homepage": "https://github.com/pebutler3/coacep",
   "devDependencies": {
-    "browser-sync": "^2.9.11",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-sass": "^2.1.0"
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-resources-loader": "^1.2.1"
   }
 }
