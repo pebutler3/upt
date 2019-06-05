@@ -1,34 +1,42 @@
 <template>
-  <div class="container welcome-wrapper">
-    <div v-for="edge in $static.allWelcomeMessage.edges" :key="edge.node.id">
-      <div v-html="edge.node.welcome"></div>
+  <div class="welcome welcome__wrapper container" v-if="welcomeMessage">
+    <div class="welcome__content" v-for="message in welcomeMessage.edges" :key="message.node.id" v-html="message.node.message.html" />
+    <div v-if="welcomeImage" class="welcome-image__wrapper">
+      <img v-for="img in welcomeImage.edges" :key="img.node.id" class="welcome-image__img" :src="img.node.image.url" />
     </div>
-    <g-image src="~/img/stock.jpg"></g-image>
   </div>
 </template>
 
-<static-query>
-  query {
-    allWelcomeMessage {
-      edges {
-        node {
-          id
-          welcome
-        }
-      }
-    }
-  }
-</static-query>
-
 <script>
 export default {
-  name: 'Welcome'
-};
+  name: 'Welcome',
+  props: ['welcomeMessage', 'welcomeImage'],
+}
 </script>
 
-<style>
-.welcome-wrapper {
-  display: flex;
-  align-items: center;
-}
+<style lang="scss">
+  .welcome {
+
+    div {
+      flex: 1;
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .welcome-image {
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__img {
+      height: 400px;
+      width: 400px;
+      margin-left: auto;
+    }
+  }
 </style>
+

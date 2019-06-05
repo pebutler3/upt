@@ -1,9 +1,28 @@
-// This is the main.js file. Import global CSS and scripts here.
-// The Client API can be used here. Learn more: gridsome.org/docs/client-api
+import Vue from 'vue'
+import App from './App.vue'
+import VueRouter from 'vue-router'
 
-import DefaultLayout from '~/layouts/Default.vue'
+import ApolloClient from 'apollo-boost'
+import VueApollo from 'vue-apollo'
+import router from './router';
 
-export default function (Vue, { router, head, isClient }) {
-  // Set default layout as a global component
-  Vue.component('Layout', DefaultLayout)
-}
+const apolloClient = new ApolloClient({
+  uri: process.env.VUE_APP_GRAPH_CMS_URI,
+});
+
+Vue.use(VueApollo)
+Vue.use(VueRouter)
+
+Vue.config.productionTip = false
+
+const apolloProvider = new VueApollo({
+  defaultClient: apolloClient,
+})
+
+Vue.config.productionTip = false
+
+new Vue({
+  apolloProvider,
+  router,
+  render: h => h(App),
+}).$mount('#app')
